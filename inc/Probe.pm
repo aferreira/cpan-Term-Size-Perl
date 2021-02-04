@@ -105,7 +105,7 @@ my $PARAMS_TEMPLATE = <<PARAMS;
 
 package Term::Size::Perl::Params; 
 
-# created @{[scalar localtime]}
+# created @{[scalar localtime($ENV{SOURCE_DATE_EPOCH} or time)]}
 
 use vars qw(\$VERSION);
 \$VERSION = '@{[MM->parse_version('Perl.pm')]}';
